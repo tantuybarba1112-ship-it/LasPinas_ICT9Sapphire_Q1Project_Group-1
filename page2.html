@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OBMC LP </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #263449;
+            background-color: #F2F6FC;
+        }
+
+        .obmc-navbar {
+            background-color: #123B70;
+        }
+
+        .obmc-navbar .navbar-brand {
+            color: #E8B83F;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .obmc-navbar .navbar-brand img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            background-color: #ffffff;
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        .obmc-navbar .nav-link {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .obmc-navbar .nav-link:hover,
+        .obmc-navbar .nav-link.active {
+            color: #E8B83F;
+        }
+
+        .banner-section {
+            background-image: linear-gradient(
+                rgba(10, 39, 76, 0.78),
+                rgba(10, 39, 76, 0.78)
+            ), url("https://obmontessori.orangeapps.ph/landing/obmontessori/images/Las%20Pinas%20Facade.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 72px 0;
+        }
+
+        h2 {
+            color: #123B70;
+            font-weight: 700;
+        }
+
+        .course-card {
+            border-top: 5px solid #123B70;
+        }
+
+        .course-card.gold-top {
+            border-top-color: #E8B83F;
+        }
+
+        .btn-obmc {
+            background-color: #E8B83F;
+            color: #123B70;
+            font-weight: 700;
+            border: none;
+        }
+
+        .btn-obmc:hover {
+            background-color: #f3c852;
+            color: #123B70;
+        }
+
+        footer {
+            background-color: #123B70;
+            color: #ffffff;
+        }
+
+        footer h2 {
+            color: #E8B83F;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark obmc-navbar shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="OBMC Logo">
+                <span>OBMC</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#obmcNav" aria-controls="obmcNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="obmcNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/index.html">Home Page</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:5500/page2.html">Courses Offer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/page3.html">Enroll Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/page4.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/page5.html">About the Group Member</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="banner-section">
+        <div class="container">
+            <h1 class="display-5 fw-bold">OBMC Las Piñas Courses Offered</h1>
+            <p class="lead mb-0">
+                Authentic Montessori education guiding learners from Casa through Senior High School.
+            </p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row align-items-end mb-4">
+            <div class="col col-md-7">
+                <h2 class="mb-1">Academic Programs</h2>
+                <p class="mb-0">Explore the Montessori curriculum offered at our Las Piñas campus.</p>
+            </div>
+            <div class="col col-md-5 mt-3 mt-md-0">
+                <label for="courseSearch" class="form-label fw-semibold mb-1">Find a Level or Strand</label>
+                <div class="d-flex gap-2">
+                    <input type="text" class="form-control" id="courseSearch" placeholder="e.g., Casa, STEM, Junior High">
+                    <button type="button" class="btn btn-obmc">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <div class="col col-md-6">
+                <div class="card h-100 bg-light shadow course-card p-3">
+                    <div class="card-body">
+                        <h3 class="h4 fw-bold text-primary">Casa Program (Ages 3 – 5)</h3>
+                        <p>Builds early independence, concentration, motor coordination, and foundational literacy and numeracy.</p>
+                        <ul class="mb-3">
+                            <li>Practical Life &amp; Sensorial</li>
+                            <li>Language, Phonics &amp; Early Math</li>
+                            <li>Cultural Studies &amp; Arts</li>
+                        </ul>
+                        <a href="http://127.0.0.1:5500/page3.html" class="btn btn-obmc">Enroll in Casa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6">
+                <div class="card h-100 bg-light shadow course-card gold-top p-3">
+                    <div class="card-body">
+                        <h3 class="h4 fw-bold text-primary">Grade School Program (Grades 1 – 6)</h3>
+                        <p>Connects concrete Montessori materials with abstract reasoning, research, and character formation.</p>
+                        <ul class="mb-3">
+                            <li>Cosmic Education (History, Geography, Science)</li>
+                            <li>Mathematics, Geometry &amp; Language Arts</li>
+                            <li>Music, Visual Arts &amp; Physical Education</li>
+                        </ul>
+                        <a href="http://127.0.0.1:5500/page3.html" class="btn btn-obmc">Enroll in Grade School</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6">
+                <div class="card h-100 bg-light shadow course-card gold-top p-3">
+                    <div class="card-body">
+                        <h3 class="h4 fw-bold text-primary">Junior High School (Grades 7 – 10)</h3>
+                        <p>Combines core academics with practical livelihood, digital skills, leadership, and social responsibility.</p>
+                        <ul class="mb-3">
+                            <li>Science, Mathematics, English &amp; Filipino</li>
+                            <li>Asian &amp; World History</li>
+                            <li>TLE &amp; ICT</li>
+                        </ul>
+                        <a href="http://127.0.0.1:5500/page3.html" class="btn btn-obmc">Enroll in Junior High</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6">
+                <div class="card h-100 bg-light shadow course-card p-3">
+                    <div class="card-body">
+                        <h3 class="h4 fw-bold text-primary">Senior High School (Grades 11 – 12)</h3>
+                        <p>Prepares students for college and future careers through specialized strands and research capstones.</p>
+                        <ul class="mb-3">
+                            <li>STEM (Science, Technology, Engineering &amp; Mathematics)</li>
+                            <li>ABM (Accountancy, Business &amp; Management)</li>
+                            <li>HUMSS (Humanities &amp; Social Sciences)</li>
+                        </ul>
+                        <a href="http://127.0.0.1:5500/page3.html" class="btn btn-obmc">Enroll in Senior High</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 mt-4">
+        <div class="container">
+            <h2>OBMC Las Piñas</h2>
+            <p class="mb-1">Operation Brotherhood Montessori Center – Las Piñas Campus</p>
+            <p class="mb-0">&copy; 2026 Operation Brotherhood Montessori Center. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
